@@ -6,5 +6,5 @@
 
 源代码demo：
 https://tenkai17.github.io/WAP-Touch/raw.html
-<a href="http://write.blog.csdn.net/postlist" target="_blank">跳到自己博客列表</a>
-跳到自己博客列表：<a href="http://write.blog.csdn.net/postlist" target="_blank">http://write.blog.csdn.net/postlist</a>
+
+欢迎大家访问<a href="http://write.blog.csdn.net/postlist" target="_blank">麦田里的码农</a>
