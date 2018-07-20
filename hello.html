@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+		</script>
+		<script>
+			$(function() {
+				$("#btn1").click(function() {
+					alert($("#btn1").text());
+				})
+
+				$("#btn2").click(function() {
+					//alert($("#test2").html());//1
+
+					$("#test2").text("修改文本"); //2
+					$("#test2").append("<b>追加文本</b>。");//3
+					$("#test2").prepend("<b>在开头追加文本</b>。 ");//4
+				})
+
+				$("#btn3").click(function() {
+					alert($("#test3").val());
+				})
+				$("#btn4").click(function() {
+					alert($("#runoob").attr("href"));
+					alert($("#runoob").attr("style"));
+				})
+
+			})
+
+			function appendText() {
+				var txt1 = "<p>文本1。</p>"; // 使用 HTML 标签创建文本
+				var txt2 = $("<b></b>").text("文本2。"); // 使用 jQuery 创建文本
+				var txt3 = document.createElement("p");
+				txt3.innerHTML = "文本3。"; // 使用 DOM 创建文本 text with DOM
+				$("body").append(txt1, txt2, txt3); // 追加新元素
+			}
+		</script>
+	</head>
+
+	<body>
+		<button id="btn1">按钮1</button>
+
+		<button id="btn2">按钮2</button>
+		<p id="test2">这是段落中的 <b>粗体</b> 文本。</p>
+
+		<button id="btn3">按钮3</button>
+		<p>名称: <input type="text" id="test3" value="菜鸟教程"></p>
+
+		<button id="btn4">按钮4 </button>
+		<p>
+			<a href="http://www.runoob.com" id="runoob" style="color: #333;">菜鸟教程</a>
+		</p>
+
+		<button onclick="appendText()">追加文本</button>
+	</body>
+
+</html>
